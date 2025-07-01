@@ -57,7 +57,19 @@ body {
   display: none;
 }
 .mobile-nav {
-  display: none;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-in-out;
+  display: grid;
+  gap: 2px;
+  list-style: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: #fff;
+  padding: 0;
+  width: 100%;
+  z-index: 1000;
 }
 /* hero section */
 
@@ -192,6 +204,9 @@ input[type="number"] {
 }
 
 @media (max-width: 800px) {
+  .mb {
+    margin-bottom: 10rem;
+  }
   .contacts {
     flex-wrap: wrap;
   }
@@ -206,18 +221,14 @@ input[type="number"] {
     display: none;
   }
   .mobile-nav-toggle {
-    position: absolute;
-    top: 88%;
-    z-index: 2;
-    right: 5%;
-    text-align: right;
-    display: grid;
-    gap: 2px;
-    list-style: none;
+    max-height: 500px;
   }
   .mobile-nav li a {
+    display: block;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+    color: #000;
     text-decoration: none;
-    color: #fff;
   }
 }
 
