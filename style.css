@@ -64,7 +64,7 @@ body {
   gap: 2px;
   list-style: none;
   position: absolute;
-  top: 100%;
+  top: 78%;
   right: 0;
   background: #fff;
   padding: 0;
@@ -204,9 +204,6 @@ input[type="number"] {
 }
 
 @media (max-width: 800px) {
-  .mb {
-    margin-bottom: 10rem;
-  }
   .contacts {
     flex-wrap: wrap;
   }
